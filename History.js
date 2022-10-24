@@ -1,15 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-const History = ({ operationText, resultText }) => {
+const History = (props) => {
   return (
     <View style={styles.container}>
       <View style={styles.text}>
-        <Text style={{ fontSize: 18 }}>{operationText}</Text>
+        <Text style={{ fontSize: 18 }}>{props.operation}</Text>
       </View>
-      <View style={styles.result}>
-        <Text style={{ fontSize: 30 }}>{resultText}</Text>
-      </View>
+      {/* <View style={styles.result}>
+        <Text style={{ fontSize: 30 }}>20</Text>
+      </View> */}
     </View>
   );
 };
